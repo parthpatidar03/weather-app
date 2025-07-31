@@ -83,7 +83,7 @@ const [cityName, setCityName] = useState(""); // State for city name
           </div>
 
           {/* Weather icon*/}
-        <img src={`http://openweathermap.org/img/wn/${weatherIcon}.png`} alt="Weather Icon" className="w-24 h-24 mt-[15px]" />
+        <img src={`https://openweathermap.org/img/wn/${weatherIcon}.png`} alt="Weather Icon" className="w-24 h-24 mt-[15px]" />
 
         {/* Temp and CityName */}
         <h1 className="text-5xl font-bold mb-[10px]">
