@@ -34,7 +34,7 @@ const [cityName, setCityName] = useState(""); // State for city name
 
       // Then, fetch weather data using lat/lon
       const weatherResponse = await axios.get(
-        `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric` // Use metric units for Celsius
+        `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric` // Use metric units for Celsius
       );
       const data = weatherResponse.data;
       if (!data || !data.main || !data.weather || data.weather.length === 0) {
